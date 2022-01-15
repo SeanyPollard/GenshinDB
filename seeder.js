@@ -1,35 +1,37 @@
-// constants
+//constants
 const { MongoClient } = require("mongodb");
 require("dotenv").config();
 const fs = require("fs").promises;
 const path = require("path");
 const loading = require("loading-cli");
-const { MONGODB_URI } = process.env;
-const client = new MongoClient(MONGODB_URI);
+const { MONGODB_URI, MONGODB_PROD_URI } = process.env;
+const client = new MongoClient(
+  process.env.NODE_ENV === "production" ? MONGODB_PROD_URI : MONGODB_URI);
 
-// main function
+//main function
 async function main() {
   try {
-    // connect to db and check for exisitng collections wih same names
+    //connect to db and check for exisiting collections
     await client.connect();
     const db = client.db();
-    const resultsUA = await db.collection("UserArtifacts").find({}).count();
-    // add for set info and any others get around to establishing
-
-    // if existing records then delete the current collections
-    if (resultsUA) {
-      db.collection().drop;
+    const collections = await db.listCollections({nameOnly: True});
+    
+    //drop any collections found
+    if (collections) {
+      collections.forEach(async function(col) {
+        db.collection(col).drop;
+      } )
     }
-    // add drops for other collections
 
-    // loading indicator in terminal
+    //loading indicator in terminal
     const load = loading("Establishing Genshin Impact Database").start();
 
-    //Import the JSON data into the database
-    const data = await fs.readFile(path.join(__dirname, "UserArtifacts.json"), "utf8");
+    //import the JSON data into the database
+    //import constants first, then user data!!
+    //data = await... mainvalues, subvalues, stats, types, sets, characters,
+    const data = await fs.readFile(path.join(__dirname, "data/UserArtifacts.json"), "utf8");
     await db.collection("UserArtifacts").insertMany(JSON.parse(data));
-    // add imports for other collections
-    
+
     /**
      * This perhaps appears a little more complex than it is. Below, we are
      * grouping the wine tasters and summing their total tastings. Finally,

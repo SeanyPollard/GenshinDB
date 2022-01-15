@@ -1,18 +1,23 @@
 const mongoose = require("mongoose");
-const { Schema } = mongoose;
+const {Schema} = mongoose;
 
 const artifactSetsSchema = new Schema(
     {
-        //setRef
-        setName: { type: String, required: [true, 'Artifact Set is required'] },
-        //setRarity??
-        //setBonus: {setEquipMin: {type: Number, required: [true, 'Artifact Set Bonus A Minimum is required']},
-        //  setBonusDesc: { type: String, required: [true, 'Artifact Set Bonus A Description is required']}}
-        //setTypes: {typeSlot: {},
-        //  setTypeName: {},
-        //  setTypeImage: {}}
+        _id: {type: String, required: [true, 'Artifact Set ID is required']},
+        set_name: {type: String, required: [true, 'Artifact Set Name is required']},
+        set_rarity: {type: Number, required: [true, 'Artifact Set Rarity is required']},
+        set_bonus: [{
+            setBonusMin: Number,
+            setBonusDesc: String
+        }],
+        set_types: [{
+            type_slot: {type: mongoose.Schema.Types.ObjectId, ref: "ArtifactType"},
+            set_type_name: String
+        //set_type_image: String
+        }]
+        //set_domain:
     },
     { timestamps: true }
 );
 
-module.exports = mongoose.model("ArtfactSet", artifactSetsSchema);
+module.exports = mongoose.model("ArtifactSet", artifactSetsSchema);
