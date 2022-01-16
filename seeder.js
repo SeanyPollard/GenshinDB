@@ -26,8 +26,7 @@ async function main() {
     //loading indicator in terminal
     const load = loading("Establishing Genshin Impact Database").start();
 
-    //import the JSON data into the database
-    //import constants first, then user data!!
+    //import the JSON data into the database - constants first, then user data
     var dataToLoad = await fs.readFile(path.join(__dirname, "data/ArtifactStatsMainValues.json"), "utf8");
     await db.collection("ArtifactStatsMainValues").insertMany(JSON.parse(dataToLoad));
     //data = await... mainvalues, subvalues, stats, types, sets, characters,

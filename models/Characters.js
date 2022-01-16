@@ -5,7 +5,7 @@ const charactersSchema = new Schema(
     {
         _id: {type: String, required: [true, 'Character ID is required']},
         character_name: String,
-        //character_element: ,
+        character_vision: String
     },
     { timestamps: true }
 );

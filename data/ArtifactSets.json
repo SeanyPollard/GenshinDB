@@ -1,4 +1,1556 @@
 [
     {
+        "_id": "Adventurer",
+        "set_name": "Adventurer",
+        "set_rarity": [1, 2, 3],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": "Max HP increased by 1,000"
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": "Opening a chest regenerates 30% Max HP over 5s"
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": "Adventurer's Flower"
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": "Adventurer's Tail Feather"
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": "Adventurer's Pocket Watch"
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": "Adventurer's Golden Goblet"
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": "Adventurer's Bandana"
+            }
+        ]
     },
+    {
+        "_id": "LuckyDog",
+        "set_name": "Lucky Dog",
+        "set_rarity": [1, 2, 3],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": "DEF increased by 100"
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": "Picking up Mora restores 300 HP"
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": "Lucky Dog's Clover"
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": "Lucky Dog's Eagle Feather"
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": "Lucky Dog's Hourglass"
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": "Lucky Dog's Goblet"
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": "Lucky Dog's Silver Circlet"
+            }
+        ]
+    },
+    {
+        "_id": "TravelingDoctor",
+        "set_name": "Traveling Doctor",
+        "set_rarity": [1, 2, 3],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": "Increases incoming healing by 20%"
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": "Using Elemental Burst restores 20% HP"
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": "Traveling Doctor's Silver Lotus"
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": "Traveling Doctor's Owl Feather"
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": "Traveling Doctor's Pocket Watch"
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": "Traveling Doctor's Medicine Pot"
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": "Traveling Doctor's Handkerchief"
+            }
+        ]
+    },
+    {
+        "_id": "ResolutionOfSojourner",
+        "set_name": "Resolution of Sojourner",
+        "set_rarity": [3, 4],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": "ATK +18%"
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": "Increases Charged Attack CRIT Rate by 30%"
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": "Heart of Comradeship"
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": "Feather of Homecoming"
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": "Sundial of the Sojourner"
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": "Goblet of the Sojourner"
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": "Crown of Parting"
+            }
+        ]
+    },
+    {
+        "_id": "TinyMiracle",
+        "set_name": "Tiny Miracle",
+        "set_rarity": [3, 4],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": "All Elemental RES increased by 20%"
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": "Incoming Elemental DMG increases corresponding Elemental RES by 30% for 10s. Can only occur once every 10s"
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": "Tiny Miracle's Flower"
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": "Tiny Miracle's Feather"
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": "Tiny Miracle's Hourglass"
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": "Tiny Miracle's Goblet"
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": "Tiny Miracle's Earrings"
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    },
+    {
+        "_id": "",
+        "set_name": "",
+        "set_rarity": [4, 5],
+        "set_bonus": [
+            {
+                "setBonusMin": 2,
+                "setBonusDesc": ""
+            },
+            {
+                "setBonusMin": 4,
+                "setBonusDesc": ""
+            }
+        ],
+        "set_types": [
+            {
+                "type_slot": "Flower",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Plume",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Sands",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Goblet",
+                "set_type_name": ""
+            },
+            {
+                "type_slot": "Circlet",
+                "set_type_name": ""
+            }
+        ]
+    }
 ]

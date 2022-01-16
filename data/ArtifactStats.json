@@ -1,0 +1,110 @@
+[
+    {
+        "_id": "ATK",
+        "stat_name": "Attack",
+        "stat_main_values_id": "AStatMainVal2",
+        "stat_sub_values_id": "AStatSubVal1"
+    },
+    {
+        "_id": "ATK%",
+        "stat_name": "Attack %",
+        "stat_main_values_id": "AStatMainVal7",
+        "stat_sub_values_id": "AStatSubVal2"
+    },
+    {
+        "_id": "HP",
+        "stat_name": "HP",
+        "stat_main_values_id": "AStatMainVal1",
+        "stat_sub_values_id": "AStatSubVal3"
+    },
+    {
+        "_id": "HP%",
+        "stat_name": "HP %",
+        "stat_main_values_id": "AStatMainVal7",
+        "stat_sub_values_id": "AStatSubVal2"
+    },
+    {
+        "_id": "DEF",
+        "stat_name": "Defence",
+        "stat_main_values_id": "",
+        "stat_sub_values_id": "AStatSubVal4"
+    },
+    {
+        "_id": "DEF%",
+        "stat_name": "Defence %",
+        "stat_main_values_id": "AStatMainVal5",
+        "stat_sub_values_id": "AStatSubVal5"
+    },
+    {
+        "_id": "EM",
+        "stat_name": "Elemental Mastery",
+        "stat_main_values_id": "AStatMainVal3",
+        "stat_sub_values_id": "AStatSubVal6"
+    },
+    {
+        "_id": "ER%",
+        "stat_name": "Energy Recharge %",
+        "stat_main_values_id": "AStatMainVal6",
+        "stat_sub_values_id": "AStatSubVal7"
+    },
+    {
+        "_id": "AnemoDMG%",
+        "stat_name": "Anemo Damage %",
+        "stat_main_values_id": "AStatMainVal7",
+        "stat_sub_values_id": ""
+    },
+    {
+        "_id": "CryoDMG%",
+        "stat_name": "Cryo Damage %",
+        "stat_main_values_id": "AStatMainVal7",
+        "stat_sub_values_id": ""
+    },
+    {
+        "_id": "ElectroDMG%",
+        "stat_name": "Electro Damage %",
+        "stat_main_values_id": "AStatMainVal7",
+        "stat_sub_values_id": ""
+    },
+    {
+        "_id": "GeoDMG%",
+        "stat_name": "Geo Damage%",
+        "stat_main_values_id": "AStatMainVal7",
+        "stat_sub_values_id": ""
+    },
+    {
+        "_id": "HydroDMG%",
+        "stat_name": "Hydro Damage %",
+        "stat_main_values_id": "AStatMainVal7",
+        "stat_sub_values_id": ""
+    },
+    {
+        "_id": "PyroDMG%",
+        "stat_name": "Pyro Damage %",
+        "stat_main_values_id": "AStatMainVal7",
+        "stat_sub_values_id": ""
+    },
+    {
+        "_id": "PhysicalDMG%",
+        "stat_name": "Physcial Damage %",
+        "stat_main_values_id": "AStatMainVal5",
+        "stat_sub_values_id": ""
+    },
+    {
+        "_id": "CDMG%",
+        "stat_name": "Critical Damage %",
+        "stat_main_values_id": "AStatMainVal4",
+        "stat_sub_values_id": "AStatSubVal8"
+    },
+    {
+        "_id": "CR%",
+        "stat_name": "Critical Rate %",
+        "stat_main_values_id": "AStatMainVal9",
+        "stat_sub_values_id": "AStatSubVal9"
+    },
+    {
+        "_id": "HEAL%",
+        "stat_name": "Healing Bonus %",
+        "stat_main_values_id": "AStatMainVal8",
+        "stat_sub_values_id": ""
+    }
+]

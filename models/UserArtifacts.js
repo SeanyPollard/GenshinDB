@@ -10,7 +10,8 @@ const userArtifactsSchema = new Schema(
             stat_id: {type: mongoose.Schema.Types.ObjectId, ref: "ArtifactStat"},
             rolls: [Number]
         }],
-        level: {type: number, default: 1, min: 1, max: 20},
+        rarity: {type: Number, min: 1, max: 5},
+        level: {type: Number, default: 0, min: 0, max: 20},
     },
     { timestamps: true }
 );

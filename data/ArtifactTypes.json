@@ -1,0 +1,27 @@
+[
+    {
+        "_id": "Flower",
+        "type_name": "Flower of Life",
+        "type_stats_main": "HP"
+    },
+    {
+        "_id": "Plume",
+        "type_name": "Plume of Death",
+        "type_stats_main": "ATK"
+    },
+    {
+        "_id": "Sands",
+        "type_name": "Sands of Eon",
+        "type_stats_main": ["HP%", "DEF%", "ATK%", "EM", "ER%"]
+    },
+    {
+        "_id": "Goblet",
+        "type_name": "Goblet of Eonothem",
+        "type_stats_main": ["ATK%", "DEF%", "HP%", "EM", "AnemoDMG%", "CryoDMG%", "ElectroDMG%", "GeoDMG%", "HydroDMG%", "PhysicalDMG%"]
+    },
+    {
+        "_id": "Circlet",
+        "type_name": "Circlet of Logos",
+        "type_stats_main": ["ATK%", "DEF%", "HP%", "EM", "CDMG%", "CR%", "HEAL%"]
+    }
+]

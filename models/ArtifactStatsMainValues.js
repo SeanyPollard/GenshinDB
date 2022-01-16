@@ -5,8 +5,8 @@ const artifactStatsMainValuesSchema = new Schema(
     {
         _id: {type: String, required: [true, 'Artifact Stats Main Values ID is required']},
         artifact_stats_main_values: [{
-            level: Number,
-            value: mongoose.Decimal128 
+            rarity: {type: Number, required: [true, 'Artifact Stats Main Values Array Rarity is required']},
+            values: [mongoose.Decimal128]
         }]
     },
     { timestamps: true }

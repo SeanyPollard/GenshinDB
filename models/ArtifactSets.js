@@ -5,7 +5,7 @@ const artifactSetsSchema = new Schema(
     {
         _id: {type: String, required: [true, 'Artifact Set ID is required']},
         set_name: {type: String, required: [true, 'Artifact Set Name is required']},
-        set_rarity: {type: Number, required: [true, 'Artifact Set Rarity is required']},
+        set_rarity: [{type: Number, required: [true, 'Artifact Set Rarity is required']}],
         set_bonus: [{
             setBonusMin: Number,
             setBonusDesc: String
