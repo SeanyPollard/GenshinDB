@@ -4,8 +4,10 @@ const {Schema} = mongoose;
 const charactersSchema = new Schema(
     {
         _id: {type: String, required: [true, 'Character ID is required']},
-        character_name: String,
-        character_vision: String
+        name: String,
+        rarity: Number,
+        weapon: String,
+        vision: [String]
     },
     { timestamps: true }
 );

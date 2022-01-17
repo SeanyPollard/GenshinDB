@@ -14,137 +14,55 @@ async function main() {
     //connect to db and check for exisiting collections
     await client.connect();
     const db = client.db();
-    const collections = await db.listCollections({nameOnly: 1});
-    
-    //drop any collections found
+    const collections = await db.listCollections( {},{nameOnly: true});
+        
+    //drop db if any collections found
     if (collections) {
-      collections.forEach(async function(col) {
-        db.collection(col).drop;
-      } )
+      await db.dropDatabase();
     }
 
     //loading indicator in terminal
-    const load = loading("Establishing Genshin Impact Database").start();
+    console.log("Establishing Genshin Impact Database");
 
-    //import the JSON data into the database - constants first, then user data
+    //import the constants data into the database
     var dataToLoad = await fs.readFile(path.join(__dirname, "data/ArtifactStatsMainValues.json"), "utf8");
     await db.collection("ArtifactStatsMainValues").insertMany(JSON.parse(dataToLoad));
-    //data = await... mainvalues, subvalues, stats, types, sets, characters,
-    //data = await fs.readFile(path.join(__dirname, "data/UserArtifacts.json"), "utf8");
-    //await db.collection("UserArtifacts").insertMany(JSON.parse(data));
 
-    /**
-     * This perhaps appears a little more complex than it is. Below, we are
-     * grouping the wine tasters and summing their total tastings. Finally,
-     * we tidy up the output so it represents the format we need for our new collection
-     */
+    dataToLoad = await fs.readFile(path.join(__dirname, "data/ArtifactStatsSubValues.json"), "utf8");
+    await db.collection("ArtifactStatsSubValues").insertMany(JSON.parse(dataToLoad));
 
-    // const wineTastersRef = await db.collection("tastings").aggregate([
-    //   { $match: { taster_name: { $ne: null } } },
-    //   {
-    //     $group: {
-    //       _id: "$taster_name",
-    //       twitter: { $first: "$taster_twitter_handle" },
-    //       tastings: { $sum: 1 },
-    //     },
+    dataToLoad = await fs.readFile(path.join(__dirname, "data/ArtifactStats.json"), "utf8");
+    await db.collection("ArtifactStats").insertMany(JSON.parse(dataToLoad));
 
-    //   },
-    //   {
-    //     $project: {
-    //       _id: 0,
-    //       name: '$_id',
-    //       twitter: '$twitter',
-    //       tastings: '$tastings'
-    //     },
-    //   },
-    // ]);
-    // /**
-    //  * Below, we output the results of our aggregate into a
-    //  * new collection
-    //  */
-    // const wineTasters = await wineTastersRef.toArray();
-    // await db.collection("tasters").insertMany(wineTasters);
+    dataToLoad = await fs.readFile(path.join(__dirname, "data/ArtifactTypes.json"), "utf8");
+    await db.collection("ArtifactTypes").insertMany(JSON.parse(dataToLoad));
 
-    // /** This data manipulation is to reference each document in the
-    //  * tastings collection to a taster id. Further to this we also take the opportunity to
-    //  * tidy up points (converting it to a int) and regions, adding them to a an array
-    //  */
+    dataToLoad = await fs.readFile(path.join(__dirname, "data/ArtifactSets.json"), "utf8");
+    await db.collection("ArtifactSets").insertMany(JSON.parse(dataToLoad));
 
-    // const updatedWineTastersRef = db.collection("tasters").find({});
-    // const updatedWineTasters = await updatedWineTastersRef.toArray();
-    // updatedWineTasters.forEach(async ({ _id, name }) => {
-    //   await db.collection("tastings").updateMany({ taster_name: name }, [
-    //     {
-    //       $set: {
-    //         taster_id: _id,
-    //         regions: ["$region_1", "$region_2"],
-    //         points: { $toInt: "$points" },
-    //       },
-    //     },
-    //   ]);
-    // });
+    dataToLoad = await fs.readFile(path.join(__dirname, "data/Characters.json"), "utf8");
+    await db.collection("Characters").insertMany(JSON.parse(dataToLoad));
+ 
+    //initialise collections for user data
+    await db.createCollection("Users");
+    await db.createCollection("UserArtifacts");
 
+    //use info from characters to create aggregate collections for sorting by vision & weapon
+    await db.collection("Characters").aggregate([
+      { $unwind: "$vision"},
+      { $group: { _id: "$vision" } },
+      { $project: { name: "$_id", "_id": 0 } },
+      { $out: "Visions" }
+    ]).toArray();
 
-    // /**
-    //  * we can get rid of region_1/2 off our root document, since we've
-    //  * placed them in an array
-    //  */
-    // await db
-    //   .collection("tastings")
-    //   .updateMany({}, { $unset: { region_1: "", region_2: " " } });
+    await db.collection("Characters").aggregate([
+      { $unwind: "$weapon"},
+      { $group: { _id: "$weapon" } },
+      { $project: { name: "$_id", "_id": 0 } },
+      { $out: "Weapons" }
+    ]).toArray()
 
-    // /**
-    //  * Finally, we remove nulls regions from our collection of arrays
-    //  * */
-    // await db
-    //   .collection("tastings")
-    //   .updateMany({ regions: { $all: [null] } }, [
-    //     { $set: { regions: [{ $arrayElemAt: ["$regions", 0] }] } },
-    //   ])
-
-
-    // db.collection("tastings").aggregate([
-    //   { $group: { _id: "$variety" } },
-    //   { $project: { name: "$_id", "_id": 0 } },
-    //   { $out: "varieties" }
-    // ]).toArray();
-
-    // db.collection("tastings").aggregate([
-    //   { $group: { _id: "$country" } },
-    //   { $project: { name: "$_id", "_id": 0 } },
-    //   { $out: "countries" }
-    // ]).toArray()
-
-
-
-    // await db.collection("tastings").aggregate([
-    //   { $group: { _id: "$province" } },
-    //   { $project: { name: "$_id", "_id": 0 } },
-    //   { $out: "provinces" }
-    // ]).toArray()
-
-    // await db.collection("tastings").aggregate([
-    //   { $unwind: "$regions" },
-    //   { $group: { _id: "$regions" } },
-    //   { $project: { name: '$_id', _id: 0 } },
-    //   { $out: "regions" }
-    // ]).toArray();
-
-
-    // await db.collection("tastings").aggregate([
-    //   { $unwind: "$regions" },
-    //   { $group: { _id: "$regions" } },
-    //   { $project: { name: "$_id", "_id": 0 } },
-    //   { $out: "regions" }
-    // ]).toArray()
-
-
-
-    load.stop();
-    console.info(
-      `Genshin Impact Database set up! \n Well just the main stats collection for testing...`
-    );
-
+    console.log("Genshin Impact Database set up!");
 
     process.exit();
   } catch (error) {

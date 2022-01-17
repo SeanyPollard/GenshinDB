@@ -7,8 +7,7 @@
             {
                 "setBonusMin": 2,
                 "setBonusDesc": "Max HP increased by 1,000"
-            },
-            {
+            }, {
                 "setBonusMin": 4,
                 "setBonusDesc": "Opening a chest regenerates 30% Max HP over 5s"
             }
@@ -17,26 +16,21 @@
             {
                 "type_slot": "Flower",
                 "set_type_name": "Adventurer's Flower"
-            },
-            {
+            }, {
                 "type_slot": "Plume",
                 "set_type_name": "Adventurer's Tail Feather"
-            },
-            {
+            }, {
                 "type_slot": "Sands",
                 "set_type_name": "Adventurer's Pocket Watch"
-            },
-            {
+            }, {
                 "type_slot": "Goblet",
                 "set_type_name": "Adventurer's Golden Goblet"
-            },
-            {
+            }, {
                 "type_slot": "Circlet",
                 "set_type_name": "Adventurer's Bandana"
             }
         ]
-    },
-    {
+    }, {
         "_id": "LuckyDog",
         "set_name": "Lucky Dog",
         "set_rarity": [1, 2, 3],
@@ -44,8 +38,7 @@
             {
                 "setBonusMin": 2,
                 "setBonusDesc": "DEF increased by 100"
-            },
-            {
+            }, {
                 "setBonusMin": 4,
                 "setBonusDesc": "Picking up Mora restores 300 HP"
             }
@@ -54,26 +47,21 @@
             {
                 "type_slot": "Flower",
                 "set_type_name": "Lucky Dog's Clover"
-            },
-            {
+            }, {
                 "type_slot": "Plume",
                 "set_type_name": "Lucky Dog's Eagle Feather"
-            },
-            {
+            }, {
                 "type_slot": "Sands",
                 "set_type_name": "Lucky Dog's Hourglass"
-            },
-            {
+            }, {
                 "type_slot": "Goblet",
                 "set_type_name": "Lucky Dog's Goblet"
-            },
-            {
+            }, {
                 "type_slot": "Circlet",
                 "set_type_name": "Lucky Dog's Silver Circlet"
             }
         ]
-    },
-    {
+    }, {
         "_id": "TravelingDoctor",
         "set_name": "Traveling Doctor",
         "set_rarity": [1, 2, 3],
@@ -81,8 +69,7 @@
             {
                 "setBonusMin": 2,
                 "setBonusDesc": "Increases incoming healing by 20%"
-            },
-            {
+            }, {
                 "setBonusMin": 4,
                 "setBonusDesc": "Using Elemental Burst restores 20% HP"
             }
@@ -91,26 +78,21 @@
             {
                 "type_slot": "Flower",
                 "set_type_name": "Traveling Doctor's Silver Lotus"
-            },
-            {
+            }, {
                 "type_slot": "Plume",
                 "set_type_name": "Traveling Doctor's Owl Feather"
-            },
-            {
+            }, {
                 "type_slot": "Sands",
                 "set_type_name": "Traveling Doctor's Pocket Watch"
-            },
-            {
+            }, {
                 "type_slot": "Goblet",
                 "set_type_name": "Traveling Doctor's Medicine Pot"
-            },
-            {
+            }, {
                 "type_slot": "Circlet",
                 "set_type_name": "Traveling Doctor's Handkerchief"
             }
         ]
-    },
-    {
+    }, {
         "_id": "ResolutionOfSojourner",
         "set_name": "Resolution of Sojourner",
         "set_rarity": [3, 4],
@@ -118,8 +100,7 @@
             {
                 "setBonusMin": 2,
                 "setBonusDesc": "ATK +18%"
-            },
-            {
+            }, {
                 "setBonusMin": 4,
                 "setBonusDesc": "Increases Charged Attack CRIT Rate by 30%"
             }
@@ -128,26 +109,21 @@
             {
                 "type_slot": "Flower",
                 "set_type_name": "Heart of Comradeship"
-            },
-            {
+            }, {
                 "type_slot": "Plume",
                 "set_type_name": "Feather of Homecoming"
-            },
-            {
+            }, {
                 "type_slot": "Sands",
                 "set_type_name": "Sundial of the Sojourner"
-            },
-            {
+            }, {
                 "type_slot": "Goblet",
                 "set_type_name": "Goblet of the Sojourner"
-            },
-            {
+            }, {
                 "type_slot": "Circlet",
                 "set_type_name": "Crown of Parting"
             }
         ]
-    },
-    {
+    }, {
         "_id": "TinyMiracle",
         "set_name": "Tiny Miracle",
         "set_rarity": [3, 4],
@@ -155,8 +131,7 @@
             {
                 "setBonusMin": 2,
                 "setBonusDesc": "All Elemental RES increased by 20%"
-            },
-            {
+            }, {
                 "setBonusMin": 4,
                 "setBonusDesc": "Incoming Elemental DMG increases corresponding Elemental RES by 30% for 10s. Can only occur once every 10s"
             }
@@ -165,1391 +140,943 @@
             {
                 "type_slot": "Flower",
                 "set_type_name": "Tiny Miracle's Flower"
-            },
-            {
+            }, {
                 "type_slot": "Plume",
                 "set_type_name": "Tiny Miracle's Feather"
-            },
-            {
+            }, {
                 "type_slot": "Sands",
                 "set_type_name": "Tiny Miracle's Hourglass"
-            },
-            {
+            }, {
                 "type_slot": "Goblet",
                 "set_type_name": "Tiny Miracle's Goblet"
-            },
-            {
+            }, {
                 "type_slot": "Circlet",
                 "set_type_name": "Tiny Miracle's Earrings"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
-        "set_rarity": [4, 5],
+    }, {
+        "_id": "Berserker",
+        "set_name": "Berserker",
+        "set_rarity": [3, 4],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "CRIT Rate +12%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "When HP is below 70%, CRIT Rate increases by an additional 24%"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Berserker's Rose"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Berserker's Indigo Feather"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Berserker's Timepiece"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Berserker's Bone Goblet"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Berserker's Battle Mask"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
-        "set_rarity": [4, 5],
+    }, {
+        "_id": "Instructor",
+        "set_name": "Instructor",
+        "set_rarity": [3, 4],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "Increases Elemental Mastery by 80"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "Upon triggering an Elemental Reaction, increases all party members' Elemental Mastery by 120 for 8s"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Instructor's Brooch"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Instructor's Feather Accessory"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Instructor's Pocket Watch"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Instructor's Tea Cup"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Instructor's Cap"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
-        "set_rarity": [4, 5],
+    }, {
+        "_id": "TheExile",
+        "set_name": "The Exile",
+        "set_rarity": [3, 4],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "Energy Recharge +20%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "Using an Elemental Burst regenerates 2 Energy for all party members (excluding the wearer) every 2s for 6s. This effect cannot stack"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Exile's Flower"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Exile's Feather"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Exile's Pocket Watch"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Exile's Goblet"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Exile's Circlet"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
-        "set_rarity": [4, 5],
+    }, {
+        "_id": "DefendersWill",
+        "set_name": "Defender's Will",
+        "set_rarity": [3, 4],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "DEF +30%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "For each different element present in your own party, the wearer's Elemental RES to that corresponding element is increased by 30%"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Guardian's Flower"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Guardian's Sigil"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Guardian's Clock"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Guardian's Vessel"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Guardian's Band"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
-        "set_rarity": [4, 5],
+    }, {
+        "_id": "BraveHeart",
+        "set_name": "Brave Heart",
+        "set_rarity": [3, 4],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
+                "setBonusDesc": "ATK +18%"
             },
             {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "Increases DMG by 30% against opponents with more than 50% HP"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Medal of the Brave"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Prospect of the Brave"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Fortitude of the Brave"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Outset of the Brave"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Crown of the Brave"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
-        "set_rarity": [4, 5],
+    }, {
+        "_id": "MartialArtist",
+        "set_name": "Martial Artist",
+        "set_rarity": [3, 4],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "Increases Normal Attack and Charged Attack DMG by 15%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "After using Elemental Skill, increases Normal Attack and Charged Attack DMG by 25% for 8s"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Martial Artist's Red Flower"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Martial Artist's Feather Accessory"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Martial Artist's Water Hourglass"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Martial Artist's Wine Cup"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Martial Artist's Bandana"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
-        "set_rarity": [4, 5],
+    }, {
+        "_id": "Gambler",
+        "set_name": "Gambler",
+        "set_rarity": [3, 4],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "Increases Elemental Skill DMG by 20%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "Defeating an opponent has 100% chance to remove Elemental Skill CD. Can only occur once every 15s"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Gambler's Brooch"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Gambler's Feather Accessory"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Gambler's Pocket Watch"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Gambler's Dice Cup"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Gambler's Earrings"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
-        "set_rarity": [4, 5],
+    }, {
+        "_id": "Scholar",
+        "set_name": "Scholar",
+        "set_rarity": [3, 4],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "Energy Recharge +20%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "Gaining Elemental Particles or Orbs gives 3 Energy to all party members who have a bow or a catalyst equipped. Can only occur once every 3s"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Scholar's Bookmark"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Scholar's Quill Pen"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Scholar's Clock"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Scholar's Ink Cup"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Scholar's Lens"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
+    }, {
+        "_id": "Prayers for Illumination",
+        "set_name": "PrayersForIllumination",
+        "set_rarity": [3, 4],
+        "set_bonus": 
+            {
+                "setBonusMin": 1,
+                "setBonusDesc": "Affected by Pyro for 40% less time"
+            },
+        "set_types": 
+            {
+                "type_slot": "Circlet",
+                "set_type_name": "Tiara of Flame"
+            }
+    }, {
+        "_id": "Prayers for Destiny",
+        "set_name": "PrayersForDestiny",
+        "set_rarity": [3, 4],
+        "set_bonus": 
+            {
+                "setBonusMin": 1,
+                "setBonusDesc": "Affected by Hydro for 40% less time"
+            },
+        "set_types": 
+            {
+                "type_slot": "Circlet",
+                "set_type_name": "Tiara of Torrents"
+            }
+    }, {
+        "_id": "Prayers for Wisdom",
+        "set_name": "PrayersForWisdom",
+        "set_rarity": [3, 4],
+        "set_bonus": 
+            {
+                "setBonusMin": 1,
+                "setBonusDesc": "Affected by Electro for 40% less time"
+            },
+        "set_types": 
+            {
+                "type_slot": "Circlet",
+                "set_type_name": "Tiara of Thunder"
+            }
+    }, {
+        "_id": "Prayers to Springtime",
+        "set_name": "PrayersToSpringtime",
+        "set_rarity": [3, 4],
+        "set_bonus": 
+            {
+                "setBonusMin": 1,
+                "setBonusDesc": "Affected by Cryo for 40% less time"
+            },
+        "set_types": 
+            {
+                "type_slot": "Circlet",
+                "set_type_name": "Tiara of Frost"
+            }
+    }, {
+        "_id": "Gladiator's Finale",
+        "set_name": "GladiatorsFinale",
         "set_rarity": [4, 5],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "ATK +18%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "If the wielder of this artifact set uses a Sword, Claymore or Polearm, increases their Normal Attack DMG by 35%"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Gladiator's Nostalgia"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Gladiator's Destiny"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Gladiator's Longing"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Gladiator's Intoxication"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Gladiator's Triumphus"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
+    }, {
+        "_id": "WanderersTroupe",
+        "set_name": "Wanderer's Troupe",
         "set_rarity": [4, 5],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "Elemental Mastery by 80"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "Increases Charged Attack DMG by 35% if the character uses a Catalyst or Bow"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Troupe's Dawnlight"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Bard's Arrow Feather"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Concert's Final Hour"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Wanderer's String Kettle"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Conductor's Top Hat"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
+    }, {
+        "_id": "Thundersoother",
+        "set_name": "Thundersoother",
         "set_rarity": [4, 5],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "Electro RES increased by 40%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "Increases DMG against opponents affected by Electro by 35%"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Thundersoother's Heart"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Thundersoother's Plume"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Hour of Soothing Thunder"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Thundersoother's Goblet"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Thundersoother's Diadem"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
+    }, {
+        "_id": "ThunderingFury",
+        "set_name": "Thundering Fury",
         "set_rarity": [4, 5],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "Electro DMG Bonus +15%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "Increases damage caused by Overloaded, Electro-Charged and Superconduct by 40%. Triggering such effects decreases Elemental Skill CD by 1s. Can only occur once every 0.8s"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Thunderbird's Mercy"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Survivor of Catastrophe"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Hourglass of Thunder"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Omen of Thunderstorm"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Thunder Summoner's Crown"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
+    }, {
+        "_id": "MaidenBeloved",
+        "set_name": "Maiden Beloved",
         "set_rarity": [4, 5],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "Character Healing Effectiveness +15%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "Using an Elemental Skill or Burst increases healing received by all party members by 20% for 10s"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Maiden's Distant Love"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Maiden's Heart-stricken Infatuation"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Maiden's Passing Youth"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Maiden's Fleeting Leisure"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Maiden's Fading Beauty"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
+    }, {
+        "_id": "ViridescentVenerer",
+        "set_name": "Viridescent Venerer",
         "set_rarity": [4, 5],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "Anemo DMG Bonus +15%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "Increases Swirl DMG by 60%. Decreases opponent's Elemental RES to the element infused in the Swirl by 40% for 10s"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "In Remembrance of Viridescent Fields"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Viridescent Arrow Feather"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Viridescent Venerer's Determination"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Viridescent Venerer's Vessel"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Viridescent Venerer's Diadem"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
+    }, {
+        "_id": "CrimsonWitchOfFlames",
+        "set_name": "Crimson Witch of Flames",
         "set_rarity": [4, 5],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "Pyro DMG Bonus +15%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "Increases Overloaded and Burning DMG by 40%. Increases Vaporize and Melt DMG by 15%. Using an Elemental Skill increases the 2-Piece Set Bonus by 50% of its starting value for 10s. Max 3 stacks"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Witch's Flower of Blaze"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Witch's Ever-Burning Plume"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Witch's End Time"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Witch's Heart Flames"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Witch's Scorching Hat"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
+    }, {
+        "_id": "Lavawalker",
+        "set_name": "Lavawalker",
         "set_rarity": [4, 5],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "Pyro RES increased by 40%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "Increases DMG against opponents affected by Pyro by 35%"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Lavawalker's Resolution"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Lavawalker's Salvation"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Lavawalker's Torment"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Lavawalker's Epiphany"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Lavawalker's Wisdom"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
+    }, {
+        "_id": "NoblesseOblige",
+        "set_name": "Noblesse Oblige",
         "set_rarity": [4, 5],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "Elemental Burst DMG +20%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "Using an Elemental Burst increases all party members' ATK by 20% for 12s. This effect cannot stack"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Royal Flora"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Royal Plume"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Royal Pocket Watch"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Royal Silver Urn"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Royal Masque"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
+    }, {
+        "_id": "BloodstainedChivalry",
+        "set_name": "Bloodstained Chivalry",
         "set_rarity": [4, 5],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "Physical DMG Bonus +25%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "After defeating an opponent, increases Charged Attack DMG by 50%, and reduces its Stamina cost to 0 for 10s. Also triggers with wild animals such as boars, squirrels and frogs"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Bloodstained Flower of Iron"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Bloodstained Black Plume"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Bloodstained Final Hour"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Bloodstained Chevalier's Goblet"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Bloodstained Iron Mask"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
+    }, {
+        "_id": "ArchaicPetra",
+        "set_name": "Archaic Petra",
         "set_rarity": [4, 5],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "Geo DMG Bonus +15%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "Upon obtaining an Elemental Shard created through a Crystallize Reaction, all party members gain 35% DMG Bonus for that particular element for 10s. Only one form of Elemental DMG Bonus can be gained in this manner at any one time"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Flower of Creviced Cliff"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Feather of Jagged Peaks"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Sundial of Enduring Jade"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Goblet of Chiseled Crag"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Mask of Solitude Basalt"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
+    }, {
+        "_id": "RetracingBolide",
+        "set_name": "Retracing Bolide",
         "set_rarity": [4, 5],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "Increases Shield Strength by 35%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "While protected by a shield, gain an additional 40% Normal and Charged Attack DMG"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Summer Night's Bloom"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Summer Night's Finale"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Summer Night's Moment"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Summer Night's Waterballoon"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Summer Night's Mask"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
+    }, {
+        "_id": "BlizzardStrayer",
+        "set_name": "Blizzard Strayer",
         "set_rarity": [4, 5],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "Cryo DMG Bonus +15%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "When a character attacks an opponent affected by Cryo, their CRIT Rate is increased by 20%. If the opponent is Frozen, CRIT Rate is increased by an additional 20%"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Snowswept Memory"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Icebreaker's Resolve"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Frozen Homeland's Demise"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Frost-Weaved Dignity"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Broken Rime's Echo"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
+    }, {
+        "_id": "HeartOfDepth",
+        "set_name": "Heart of Depth",
         "set_rarity": [4, 5],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "Hydro DMG Bonus +15%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "After using an Elemental Skill, increases Normal Attack and Charged Attack DMG by 30% for 15s"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Gilded Corsage"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Gust of Nostalgia"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Copper Compass"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Goblet of Thundering Deep"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Wine-Stained Tricorne"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
+    }, {
+        "_id": "TenacityOfTheMillelith",
+        "set_name": "Tenacity of the Millelith",
         "set_rarity": [4, 5],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "HP +20%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "When an Elemental Skill hits an opponent, the ATK of all nearby party members is increased by 20% and their Shield Strength is increased by 30% for 3s. This effect can be triggered once every 0.5s. This effect can still be triggered even when the character who is using this artifact set is not on the field"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Flower of Accolades"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Ceremonial War-Plume"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Orichalceous Time-Dial"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Noble's Pledging Vessel"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "General's Ancient Helm"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
+    }, {
+        "_id": "PaleFlame",
+        "set_name": "Pale Flame",
         "set_rarity": [4, 5],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "Physical DMG Bonus +25%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "When an Elemental Skill hits an opponent, ATK is increased by 9% for 7s. This effect stacks up to 2 times and can be triggered once every 0.3s. Once 2 stacks are reached, the 2-set effect is increased by 100%"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Stainless Bloom"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Wise Doctor's Pinion"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Moment of Cessation"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Surpassing Cup"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Mocking Mask"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
+    }, {
+        "_id": "ShimenawasReminiscence",
+        "set_name": "Shimenawa's Reminiscence",
         "set_rarity": [4, 5],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "ATK +18%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "When casting an Elemental Skill, if the character has 15 or more Energy, they lose 15 Energy and Normal/Charged/Plunging Attack DMG is increased by 50% for 10s. This effect will not trigger again during that duration"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Entangling Bloom"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Shaft of Remembrance"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Morning Dew's Moment"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Hopeful Heart"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Capricious Visage"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
+    }, {
+        "_id": "EmblemOfSeveredFate",
+        "set_name": "Emblem of Severed Fate",
         "set_rarity": [4, 5],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "Energy Recharge +20%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "Increases Elemental Burst DMG by 25% of Energy Recharge. A maximum of 75% bonus DMG can be obtained in this way"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Magnificent Tsuba"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Sundered Feather"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Storm Cage"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Scarlet Vessel"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Ornate Kabuto"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
+    }, {
+        "_id": "HuskOfOpulentDreams",
+        "set_name": "Husk of Opulent Dreams",
         "set_rarity": [4, 5],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "DEF +30%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "A character equipped with this Artifact set will obtain the Curiosity effect in the following conditions:\nWhen on the field, the character gains 1 stack after hitting an opponent with a Geo attack, triggering a maximum of once every 0.3s.\nWhen off the field, the character gains 1 stack every 3s.\nCuriosity can stack up to 4 times, each providing 6% DEF and a 6% Geo DMG Bonus.\nWhen 6 seconds pass without gaining a Curiosity stack, 1 stack is lost"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Bloom Times"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Plume of Luxury"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Song of Life"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Calabash of Awakening"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Skeletal Hat"
             }
         ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
+    }, {
+        "_id": "OceanHuedClam",
+        "set_name": "Ocean-Hued Clam",
         "set_rarity": [4, 5],
         "set_bonus": [
             {
                 "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
+                "setBonusDesc": "Healing Bonus +15%"
+            }, {
                 "setBonusMin": 4,
-                "setBonusDesc": ""
+                "setBonusDesc": "When the character equipping this artifact set heals a character in the party, a Sea-Dyed Foam will appear for 3 seconds, accumulating the amount of HP recovered from healing (including overflow healing).\nAt the end of the duration, the Sea-Dyed Foam will explode, dealing DMG to nearby opponents based on 90% of the accumulated healing.\n(This DMG is calculated similarly to Reactions such as Electro-Charged, and Superconduct, but it is not affected by Elemental Mastery, Character Levels, or Reaction DMG Bonuses).\nOnly one Sea-Dyed Foam can be produced every 3.5 seconds.\nEach Sea-Dyed Foam can accumulate up to 30,000 HP (including overflow healing).\nThere can be no more than one Sea-Dyed Foam active at any given time.\nThis effect can still be triggered even when the character who is using this artifact set is not on the field"
             }
         ],
         "set_types": [
             {
                 "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Sea-Dyed Blossom"
+            }, {
                 "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Deep Palace's Plume"
+            }, {
                 "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Cowry of Parting"
+            }, {
                 "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
+                "set_type_name": "Pearl Cage"
+            }, {
                 "type_slot": "Circlet",
-                "set_type_name": ""
-            }
-        ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
-        "set_rarity": [4, 5],
-        "set_bonus": [
-            {
-                "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
-                "setBonusMin": 4,
-                "setBonusDesc": ""
-            }
-        ],
-        "set_types": [
-            {
-                "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Circlet",
-                "set_type_name": ""
-            }
-        ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
-        "set_rarity": [4, 5],
-        "set_bonus": [
-            {
-                "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
-                "setBonusMin": 4,
-                "setBonusDesc": ""
-            }
-        ],
-        "set_types": [
-            {
-                "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Circlet",
-                "set_type_name": ""
-            }
-        ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
-        "set_rarity": [4, 5],
-        "set_bonus": [
-            {
-                "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
-                "setBonusMin": 4,
-                "setBonusDesc": ""
-            }
-        ],
-        "set_types": [
-            {
-                "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Circlet",
-                "set_type_name": ""
-            }
-        ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
-        "set_rarity": [4, 5],
-        "set_bonus": [
-            {
-                "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
-                "setBonusMin": 4,
-                "setBonusDesc": ""
-            }
-        ],
-        "set_types": [
-            {
-                "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Circlet",
-                "set_type_name": ""
-            }
-        ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
-        "set_rarity": [4, 5],
-        "set_bonus": [
-            {
-                "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
-                "setBonusMin": 4,
-                "setBonusDesc": ""
-            }
-        ],
-        "set_types": [
-            {
-                "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Circlet",
-                "set_type_name": ""
-            }
-        ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
-        "set_rarity": [4, 5],
-        "set_bonus": [
-            {
-                "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
-                "setBonusMin": 4,
-                "setBonusDesc": ""
-            }
-        ],
-        "set_types": [
-            {
-                "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Circlet",
-                "set_type_name": ""
-            }
-        ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
-        "set_rarity": [4, 5],
-        "set_bonus": [
-            {
-                "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
-                "setBonusMin": 4,
-                "setBonusDesc": ""
-            }
-        ],
-        "set_types": [
-            {
-                "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Circlet",
-                "set_type_name": ""
-            }
-        ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
-        "set_rarity": [4, 5],
-        "set_bonus": [
-            {
-                "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
-                "setBonusMin": 4,
-                "setBonusDesc": ""
-            }
-        ],
-        "set_types": [
-            {
-                "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Circlet",
-                "set_type_name": ""
-            }
-        ]
-    },
-    {
-        "_id": "",
-        "set_name": "",
-        "set_rarity": [4, 5],
-        "set_bonus": [
-            {
-                "setBonusMin": 2,
-                "setBonusDesc": ""
-            },
-            {
-                "setBonusMin": 4,
-                "setBonusDesc": ""
-            }
-        ],
-        "set_types": [
-            {
-                "type_slot": "Flower",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Plume",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Sands",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Goblet",
-                "set_type_name": ""
-            },
-            {
-                "type_slot": "Circlet",
-                "set_type_name": ""
+                "set_type_name": "Crown of Watatsumi"
             }
         ]
     }
