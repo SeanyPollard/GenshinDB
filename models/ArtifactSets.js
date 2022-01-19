@@ -20,4 +20,4 @@ const artifactSetsSchema = new Schema(
     { timestamps: true }
 );
 
-module.exports = mongoose.model("ArtifactSet", artifactSetsSchema);
+module.exports = mongoose.model("ArtifactSets", artifactSetsSchema, "ArtifactSets");

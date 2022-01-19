@@ -15,4 +15,4 @@ const artifactStatsSubValuesSchema = new Schema(
     { timestamps: true }
 );
 
-module.exports = mongoose.model("ArtfactStatsSubValues", artifactStatsSubValuesSchema);
+module.exports = mongoose.model("ArtfactStatsSubValues", artifactStatsSubValuesSchema, "ArtfactStatsSubValues");

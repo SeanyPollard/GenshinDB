@@ -404,8 +404,8 @@
             }
         ]
     }, {
-        "_id": "Prayers for Illumination",
-        "set_name": "PrayersForIllumination",
+        "_id": "PrayersForIllumination",
+        "set_name": "Prayers for Illumination",
         "set_rarity": [3, 4],
         "set_bonus": 
             {
@@ -418,8 +418,8 @@
                 "set_type_name": "Tiara of Flame"
             }
     }, {
-        "_id": "Prayers for Destiny",
-        "set_name": "PrayersForDestiny",
+        "_id": "PrayersForDestiny",
+        "set_name": "Prayers for Destiny",
         "set_rarity": [3, 4],
         "set_bonus": 
             {
@@ -432,8 +432,8 @@
                 "set_type_name": "Tiara of Torrents"
             }
     }, {
-        "_id": "Prayers for Wisdom",
-        "set_name": "PrayersForWisdom",
+        "_id": "PrayersForWisdom",
+        "set_name": "Prayers for Wisdom",
         "set_rarity": [3, 4],
         "set_bonus": 
             {
@@ -446,8 +446,8 @@
                 "set_type_name": "Tiara of Thunder"
             }
     }, {
-        "_id": "Prayers to Springtime",
-        "set_name": "PrayersToSpringtime",
+        "_id": "PrayersToSpringtime",
+        "set_name": "Prayers to Springtime",
         "set_rarity": [3, 4],
         "set_bonus": 
             {
@@ -460,8 +460,8 @@
                 "set_type_name": "Tiara of Frost"
             }
     }, {
-        "_id": "Gladiator's Finale",
-        "set_name": "GladiatorsFinale",
+        "_id": "GladiatorsFinale",
+        "set_name": "Gladiator's Finale",
         "set_rarity": [4, 5],
         "set_bonus": [
             {

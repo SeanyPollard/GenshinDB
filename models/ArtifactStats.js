@@ -11,4 +11,4 @@ const artifactStatsSchema = new Schema(
     { timestamps: true }
 );
 
-module.exports = mongoose.model("ArtifactStat", artifactStatsSchema);
+module.exports = mongoose.model("ArtifactStats", artifactStatsSchema, "ArtifactStats");

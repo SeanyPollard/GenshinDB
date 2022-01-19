@@ -12,4 +12,4 @@ const charactersSchema = new Schema(
     { timestamps: true }
 );
 
-module.exports = mongoose.model("Character", charactersSchema);
+module.exports = mongoose.model("Characters", charactersSchema, "Characters");

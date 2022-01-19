@@ -10,4 +10,4 @@ const artifactTypesSchema = new Schema(
     { timestamps: true }
 );
 
-module.exports = mongoose.model("ArtifactType", artifactTypesSchema);
+module.exports = mongoose.model("ArtifactTypes", artifactTypesSchema, "ArtifactTypes");

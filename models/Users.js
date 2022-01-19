@@ -4,6 +4,7 @@ const bcrypt = require('bcrypt');
 
 const userSchema = new Schema(
     {
+        name: {type: String, required: [true, 'Name is required']},
         email: {type: String, required: [true, 'Email is required'], unique: true},
         password: {type: String, required: [true, 'Password is required']},
         user_artifacts: [{
@@ -25,4 +26,4 @@ userSchema.pre('save', async function (next) {
     }
 })
 
-module.exports = mongoose.model("User", userSchema);
+module.exports = mongoose.model("Users", userSchema, "Users");

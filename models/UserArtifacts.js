@@ -16,4 +16,4 @@ const userArtifactsSchema = new Schema(
     { timestamps: true }
 );
 
-module.exports = mongoose.model("UserArtifact", userArtifactsSchema);
+module.exports = mongoose.model("UserArtifacts", userArtifactsSchema, "UserArtifacts");
