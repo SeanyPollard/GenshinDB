@@ -105,7 +105,7 @@ exports.create = async (req, res) => {
         console.log(arti._id)
         const artifactID = arti._id
         await User.updateOne({_id: global.user}, {$push:{user_artifacts: artifactID}})
-        res.redirect('/artifact-evaluation/?message=artifact has been saved')
+        res.redirect('/my-artifacts')
     } catch (e) {
         if (e.errors) {
             console.log(e.errors);
