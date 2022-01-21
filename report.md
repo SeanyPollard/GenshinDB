@@ -5,10 +5,10 @@
 ## 21st January 2022
 
 ### Link to Hosted Web Application
-[]()
+[https://ancient-wave-81752.herokuapp.com/](https://ancient-wave-81752.herokuapp.com/)
 
 ### Link to Hosted GIT Repository
-[]()
+[https://github.com/SeanyPollard/GenshinDB](https://github.com/SeanyPollard/GenshinDB)
 ### Introduction
 Genshin Impact is an action role-playing game developed by the Chinese company MiHoYo. The game challenges players to collect and strengthen characters to form powerful, synergised teams so that they may defeat powerful enemies and progress through the story told about 'The Traveller'. An element of upgrading the characters is earning of 'Artifacts' and enhancing them. Each character can equip one of each type of Artifact: 'Flower of Life', 'Plume of Death', 'Sands of Eon', 'Goblet of Eonothem' and 'Circlet of Logos'. Each Artifact is part of a 'Set' and has a 'Rarity', a 'Level', a specialist main attribute ('Main Stat') and a subset of up to 4 additional attributes ('Sub Stats') to boost a character's abilities. Also, equipping multiple Artifacts from the same Set on a single character provides extra bonuses. Pictured below is the character 'Kamisato Ayaka' and a summary of equipped Artifacts, including some attribute bonuses (Max HP, ATK, DEF and Elemental Mastery) along with two bonuses gained by equipping four Artifacts from the 'Shimenawa's Reminiscence' Set.
 
@@ -44,3 +44,8 @@ The highlights of chosen options makes it clear to the user what they've already
 
 ### Key Design Decisions
 
+The databse is structurd to mimic the game files to help with future updates.
+
+### Conclusion
+
+I ran out of time :(
