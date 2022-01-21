@@ -12,6 +12,9 @@ const ArtifactTypes = require("./models/ArtifactTypes")
 //controllers
 const homeController = require("./controllers/home");
 const artifactEvalutionController = require("./controllers/artifact-evaluation");
+const mainStatApiController = require("./controllers/api/main-stat-update")
+const setPieceNameApiController = require("./controllers/api/set-piece-name")
+const mainStatButtonsController = require("./controllers/api/main-stat-buttons")
 // const homeController = require("./controllers/home");
 // const userController = require("./controllers/user");
 // const tastingApiController = require("./controllers/api/tasting");
@@ -59,6 +62,9 @@ app.get("/", homeController.list);
 
 app.get("/artifact-evaluation", artifactEvalutionController.list);
 
+app.get("/api/main-stat-update", mainStatApiController.list);
+app.get("/api/set-piece-name", setPieceNameApiController.list);
+app.get("/api/main-stat-buttons", mainStatButtonsController.list);
 
 // app.get("/logout", async (req, res) => {
 //   req.session.destroy();

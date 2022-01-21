@@ -1,18 +1,18 @@
 <header class ="mb-auto">
     <div>
 
-        <nav class="nav nav-masthead justify-content-center float-md-end fixed-top bg-dark">
+        <nav class="nav nav-masthead justify-content-center float-md-end fixed-top bg-dark" id="nav-bar">
             <h3 class="navbar-brand "> Genshin Impact Database </h3>
-            <a class="nav-link active" aria-current="page" href="/"> Home </a>
-            <a class="nav-link" href="artifact-evaluation"> Artifact Evaluation </a>
+            <a class="nav-link active" href="/"> Home </a>
+            <a class="nav-link" href="/artifact-evaluation"> Artifact Evaluation </a>
             <% if(user) { %>
-                <a class="nav-link" href="my-artifacts"> My Artifacts </a>
-                <a class="nav-link" href="search-artifacts"> Search Artifacts </a>
-                <a class="nav-link" href="logout"> <%= user.name %> (Logout) </a>
+                <a class="nav-link" href="/my-artifacts"> My Artifacts </a>
+                <a class="nav-link" href="/search-artifacts"> Search Artifacts </a>
+                <a class="nav-link" href="/logout"> <%= user.name %> (Logout) </a>
             <% } %> 
             <% if(!user) { %>
-                <a class="nav-link" href="login"> Login </a>
-                <a class="nav-link" href="join"> Register </a>
+                <a class="nav-link" href="/login"> Login </a>
+                <a class="nav-link" href="/join"> Register </a>
             <% } %>
         </nav>
     </div>
