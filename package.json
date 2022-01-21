@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon app.js",
     "seedProd": "cross-env NODE_ENV=production node seeder.js",
-    "seed": "node seeder.js"
+    "seed": "node seeder.js",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
