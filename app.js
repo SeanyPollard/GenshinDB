@@ -1,6 +1,6 @@
 //modules & models
 require("dotenv").config();
-const { PORT, MONGODB_URI } = process.env;
+const { PORT, MONGODB_URI, MONGODB_PROD_URI } = process.env;
 const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
@@ -22,7 +22,7 @@ const app = express();
 app.set("view engine", "ejs");
 
 //db connection
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
+mongoose.connect(process.env.NODE_ENV === "production" ? MONGODB_PROD_URI : MONGODB_URI, { useNewUrlParser: true });
 mongoose.connection.on("error", (err) => {
   console.error(err);
   console.log("MongoDB connection error. Please make sure MongoDB is running.");
