@@ -6,20 +6,17 @@ const path = require("path");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const expressSession = require("express-session");
-const User = require("./models/Users");
-const ArtifactTypes = require("./models/ArtifactTypes")
+const User = require("./models/User");
 
 //controllers
 const homeController = require("./controllers/home");
-const artifactEvalutionController = require("./controllers/artifact-evaluation");
+const artifactEvaluationController = require("./controllers/artifact-evaluation");
 const mainStatApiController = require("./controllers/api/main-stat-update")
 const setPieceNameApiController = require("./controllers/api/set-piece-name")
 const mainStatButtonsController = require("./controllers/api/main-stat-buttons")
-// const homeController = require("./controllers/home");
-// const userController = require("./controllers/user");
-// const tastingApiController = require("./controllers/api/tasting");
-// const savedTastingApiController = require("./controllers/api/savedTasting");
-// const savedTastingController = require("./controllers/savedTasting");
+const subStatScoreController = require("./controllers/api/sub-stat-score")
+const userController = require("./controllers/user");
+const savedArtifactsController = require("./controllers/saved-artifacts")
 
 const app = express();
 app.set("view engine", "ejs");
@@ -60,60 +57,33 @@ const authMiddleware = async (req, res, next) => {
 //methods from controllers
 app.get("/", homeController.list);
 
-app.get("/artifact-evaluation", artifactEvalutionController.list);
+app.get("/artifact-evaluation", artifactEvaluationController.list);
 
 app.get("/api/main-stat-update", mainStatApiController.list);
 app.get("/api/set-piece-name", setPieceNameApiController.list);
 app.get("/api/main-stat-buttons", mainStatButtonsController.list);
+app.get("/api/sub-stat-score", subStatScoreController.list);
 
-// app.get("/logout", async (req, res) => {
-//   req.session.destroy();
-//   global.user = false;
-//   res.redirect('/');
-// })
+app.post("/save-artifact", artifactEvaluationController.create);
 
-// app.get("/create-taster", authMiddleware, (req, res) => {
-//   res.render("create-taster", { errors: {} });
-// });
+app.get("/my-artifacts", savedArtifactsController.list)
 
-// app.post("/create-taster", tasterController.create);
+app.get("/join", (req, res) => {
+  res.render('create-user', { errors: {} })
+});
 
-// app.get("/tasters", tasterController.list);
-// app.get("/tasters/delete/:id", tasterController.delete);
-// app.get("/tasters/update/:id", tasterController.edit);
-// app.post("/tasters/update/:id", tasterController.update);
+app.post("/join", userController.create);
+app.get("/login", (req, res) => {
+  res.render('login-user', { errors: {} })
+});
+app.post("/login", userController.login);
 
 
-
-// app.get("/create-tasting", tastingController.createView);
-// app.post("/create-tasting", tastingController.create);
-// app.get("/update-tasting/:id", tastingController.edit);
-
-// app.get("/search-tastings",(req,res) => {
-//   res.render('search-tastings', tastingApiController);
-// });
-
-// app.get("/saved-tastings", savedTastingController.list);
-
-// app.get("/api/search-tastings", tastingApiController.list);
-// app.post("/api/saved-tasting", savedTastingApiController.create);
-
-
-
-// app.get("/tastings", tastingController.list);
-// app.get("/tastings/delete/:id", tastingController.delete);
-
-// app.get("api/tasting", )
-
-// app.get("/join", (req, res) => {
-//   res.render('create-user', { errors: {} })
-// });
-
-// app.post("/join", userController.create);
-// app.get("/login", (req, res) => {
-//   res.render('login-user', { errors: {} })
-// });
-// app.post("/login", userController.login);
+app.get("/logout", async (req, res) => {
+  req.session.destroy();
+  global.user = false;
+  res.redirect('/');
+})
 
 
 app.listen(PORT, () => {

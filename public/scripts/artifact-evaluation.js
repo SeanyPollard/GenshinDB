@@ -1,6 +1,9 @@
-var rarityValue, setID, typeValue, mainStatVID, mainStatName
+var rarityValue, setID, typeValue, mainStatID, mainStatVID, mainStatName, mainStatValue
+var subStatID = ["","","",""]
+var subStatVID = ["","","",""]
+var subStatName = ["","","",""]
+var subStatValue = [0,0,0,0]
 var levelValue = 0
-var subStatID = []
 
 const rarityClick = (rarityChosen) => {
     rarityValue = rarityChosen.innerHTML;
@@ -95,6 +98,7 @@ const levelChange = (levelChosen) => {
 }
 
 const mainStatClick = (mainStatChosen) => {
+    mainStatID = mainStatChosen.dataset.statid
     mainStatVID = mainStatChosen.dataset.statmvid;
     mainStatName = mainStatChosen.innerHTML;
     const oldStat = document.getElementsByClassName("btn btn-light main-btn");
@@ -107,6 +111,18 @@ const mainStatClick = (mainStatChosen) => {
         msvUpdate();
     }
 }
+
+const sStatItemClick = (subStatChosen) => {
+    const ssRef = subStatChosen.dataset.substat
+    subStatID[ssRef] = subStatChosen.dataset.statid
+    subStatVID[ssRef] = subStatChosen.dataset.statvid
+    subStatName[ssRef] = subStatChosen.text
+    document.getElementById("subStat"+ssRef+"DropdownButton").innerHTML = subStatChosen.text;
+    document.getElementById("subStat"+ssRef).innerHTML = subStatChosen.text;
+    document.getElementById("subStat"+ssRef+"DropdownButton").setAttribute("class", "btn w-75 btn-light dropdown-toggle show");
+    document.getElementById("subStat"+ssRef+"InputBox").value = ""
+}
+
 
 const msBtnUpdate = async () => {
     try {
@@ -165,3 +181,44 @@ const setClear = () => {
     setPieceName = "";
     document.getElementById("typeName").innerHTML = setPieceName;
 }
+
+
+const sStatScore = async (sStatInput) => {
+    try {
+        const ssRef = sStatInput.dataset.substat
+        if (subStatVID[ssRef] && rarityValue) {
+            const Resp = await fetch(`/api/sub-stat-score?id=${subStatVID[ssRef]}&rarity=${rarityValue}`);
+            const ssMV = await Resp.json();
+            const ssIV = sStatInput.value
+            subStatValue[ssRef] = ssIV
+            document.getElementById("subStat"+ssRef).innerHTML = subStatID[ssRef]+": "+ssIV+" / "+ssMV;
+        }
+    } catch (e) {
+    console.log(e)
+    console.log("could not fetch sub stat max value")
+    }
+}
+
+const submitClick = () => {
+    if (setID && typeValue && mainStatID && subStatID[1] && subStatID[2] && subStatID[3] && subStatID[4] && rarityValue ) {
+        const Save = new XMLHttpRequest();
+        Save.open("POST", "/save-artifact", true);
+        Save.setRequestHeader('Content-Type', 'application/json');
+        Save.send(JSON.stringify({
+            set: setID,
+            type: typeValue,
+            main: mainStatID,
+            sub1: subStatID[1],
+            sub2: subStatID[2],
+            sub3: subStatID[3],
+            sub4: subStatID[4],
+            subv1: subStatValue[1],
+            subv2: subStatValue[2],
+            subv3: subStatValue[3],
+            subv4: subStatValue[4],
+            rarity: rarityValue,
+            level: levelValue
+        }))
+    }
+}
+

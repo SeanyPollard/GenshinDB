@@ -2,13 +2,11 @@ const ArtifactSet = require('../models/ArtifactSets');
 const ArtifactType = require('../models/ArtifactTypes');
 const ArtifactStat = require('../models/ArtifactStats');
 const ArtifactStatsMainValues = require('../models/ArtifactStatsMainValues');
-const ArtifactStatsSubValues = require('../models/ArtifactStatsSubValues')
-// const Users = require('../models/Users');
-// const Artifacts = require('../models/UserArtifacts')
+// const ArtifactStatsSubValues = require('../models/ArtifactStatsSubValues')
+const User = require('../models/User');
+const Artifact = require('../models/UserArtifacts')
 
-//DO SET FIRST COZ TIARAS
 exports.list = async (req, res) => {
-    console.log(req.session);
     try {
         const artifactStatsMainValues = await ArtifactStatsMainValues.find({});
         const statsValues = artifactStatsMainValues[0].artifact_stats_main_values;
@@ -75,6 +73,47 @@ exports.list = async (req, res) => {
     } catch (e) {
         res.status(404).send({
             message: `error rendering page`,
+        });
+    }
+};
+
+exports.create = async (req, res) => {
+    try {
+        const userArtifact = new Artifact ({
+           set_id: req.body.set,
+           type_id: req.body.type,
+           stat_main_id: req.body.main,
+           stats_sub: [{
+               stat_id: req.body.sub1,
+               value: req.body.subv1
+            }, { 
+                stat_id: req.body.sub2,
+                value: req.body.subv2
+            }, {
+                stat_id: req.body.sub3,
+                value: req.body.subv3
+            }, {
+                stat_id: req.body.sub4,
+                value: req.body.subv4
+            }],
+            rarity: req.body.rarity,
+            level: req.body.level
+
+        });
+
+        const arti = await userArtifact.save() 
+        console.log(arti._id)
+        const artifactID = arti._id
+        await User.updateOne({_id: global.user}, {$push:{user_artifacts: artifactID}})
+        res.redirect('/artifact-evaluation/?message=artifact has been saved')
+    } catch (e) {
+        if (e.errors) {
+            console.log(e.errors);
+            res.render('create-taster', { errors: e.errors })
+            return;
+          }
+          return res.status(400).send({
+            message: JSON.parse(e),
         });
     }
 }

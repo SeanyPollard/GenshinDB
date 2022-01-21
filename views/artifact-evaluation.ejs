@@ -6,7 +6,7 @@
         <meta name="description" content="">
         <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
         <meta name="generator" content="Hugo 0.88.1">
-        <title>Genshin Impact Database</title>
+        <title>Genshin Impact Database - Artifact Evaluation</title>
 
         <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
 
@@ -84,6 +84,11 @@
                         <div class="row mb-3">
                           <h2 id="subStat4"class="p-1 text-white">Sub Stat 4</h2>
                         </div>
+                        <% if(global.user) { %>
+                          <div class="row mb-3">
+                            <button onclick="submitClick()" type="button" class="btn btn-lg btn-outline-light type-btn">Save Artifact</button>
+                          </div>
+                          <% } %>
                       </div>
                     </div>
                     <div class="col-8">
@@ -96,7 +101,7 @@
                               <div class="col p-1">
                                 <div class="btn-group btn-block btn-lg" role="group" id="rarityButtons">
                                   <% rarities.forEach(rarity => { %>
-                                    <button onclick="rarityClick(this)" type="button" class="btn btn-outline-light rarity-btn" data-level="<%= rarity.max_level %>"" ><%= rarity.rarity %></button>
+                                    <button onclick="rarityClick(this)" type="button" class="btn btn-outline-light rarity-btn" data-level="<%= rarity.max_level %>" ><%= rarity.rarity %></button>
                                   <% }) %>
                                   </div>
                                 </div>
@@ -135,7 +140,30 @@
                                 </div>
                               <div class="col p-1">
                                 <div class="range">
-                                <input onchange="levelChange(this)" type="range" class="form-range align-middle w-75" min="0" max="20" value="0" id="levelRange">
+                                <input onchange="levelChange(this)" type="range" list="rangeticks" class=" align-middle w-75" min="0" max="20" value="0" id="levelRange">
+                                <datalist id="rangeticks" display="">
+                                  <option value="0" label="0"></option>
+                                  <option value="1" ></option>
+                                  <option value="2" ></option>
+                                  <option value="3" ></option>
+                                  <option value="4" label="4"></option>
+                                  <option value="5" ></option>
+                                  <option value="6" ></option>
+                                  <option value="7" ></option>
+                                  <option value="8" label="8"></option>
+                                  <option value="9" ></option>
+                                  <option value="10" ></option>
+                                  <option value="11" ></option>
+                                  <option value="12" label="12"></option>
+                                  <option value="13" ></option>
+                                  <option value="14" ></option>
+                                  <option value="15" ></option>
+                                  <option value="16" label="16"></option>
+                                  <option value="17" ></option>
+                                  <option value="18" ></option>
+                                  <option value="19" ></option>
+                                  <option value="20" label="20"></option>
+                                </datalist>
                               </div>
                               </div>
                               </div>
@@ -166,7 +194,7 @@
                                         <button class="btn w-75 btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" type="button" id="<%=sb%>" >Pick Sub Stat <%=ss%><span class="caret"></span></button>
                                         <ul class="dropdown-menu dropdown-menu-dark mb-0" id="setDropdownItems">
                                           <% sStats.forEach(sStat => { %>
-                                          <li><a onclick="sStatItemClick(this)" class="dropdown-item align-items-center gap-2 py-1" data-statHide="no" data-subStat="<%=ss%>" data-statID="<%= sStat.id %>">
+                                          <li><a onclick="sStatItemClick(this)" class="dropdown-item align-items-center gap-2 py-1" data-statHide="no" data-subStat="<%=ss%>" data-statID="<%= sStat.id %>" data-statvid="<%=sStat.vid%>">
                                             <%= sStat.name %>
                                           </a></li>
                                           <% }) %>
@@ -175,8 +203,8 @@
                                   </div>
                                         <div class="col-4">
                                           <div class="form-outline form-white">
-                                        <input class="form-control border border-light w-75" type="text" id="<%=si%>" autocomplete="false">
-                                        <label class="form-label bg-dark m-1" for="<%=si%>">Value</label>
+                                        <input onkeyup="sStatScore(this)" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" class="form-control border border-light w-75" type="number" id="<%=si%>" autocomplete="false" data-substat="<%=ss%>">
+                                        <!-- <label class="form-label bg-dark m-1" for="<%=si%>">Value</label> -->
                                       </div>
                                       </div>
                                     </div> 

@@ -5,15 +5,15 @@
             <h3 class="navbar-brand "> Genshin Impact Database </h3>
             <a class="nav-link active" href="/"> Home </a>
             <a class="nav-link" href="/artifact-evaluation"> Artifact Evaluation </a>
-            <% if(user) { %>
+            <% if(global.user) { %>
                 <a class="nav-link" href="/my-artifacts"> My Artifacts </a>
-                <a class="nav-link" href="/search-artifacts"> Search Artifacts </a>
                 <a class="nav-link" href="/logout"> <%= user.name %> (Logout) </a>
             <% } %> 
-            <% if(!user) { %>
+            <% if(!global.user) { %>
                 <a class="nav-link" href="/login"> Login </a>
                 <a class="nav-link" href="/join"> Register </a>
             <% } %>
         </nav>
     </div>
 </header>
+

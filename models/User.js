@@ -7,10 +7,11 @@ const userSchema = new Schema(
         name: {type: String, required: [true, 'Name is required']},
         email: {type: String, required: [true, 'Email is required'], unique: true},
         password: {type: String, required: [true, 'Password is required']},
-        user_artifacts: [{
-            artifact_id: {type: mongoose.Schema.Types.ObjectId, ref: "UserArtifact"},
-            character_id: {type: mongoose.Schema.Types.ObjectId, ref: "Character"}
-        }], 
+        user_artifacts: [{type: mongoose.Schema.Types.ObjectId, ref: "UserArtifacts"}]
+        // user_artifacts: [{
+        //     artifact_id: {type: mongoose.Schema.Types.ObjectId, ref: "UserArtifact"},
+        //     character_id: {type: mongoose.Schema.Types.ObjectId, ref: "Character"}
+        // }], 
     },
     { timestamps: true }
 );

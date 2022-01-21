@@ -6,7 +6,7 @@
         <meta name="description" content="">
         <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
         <meta name="generator" content="Hugo 0.88.1">
-        <title>Genshin Impact Database</title>
+        <title>Genshin Impact Database - Join</title>
 
         <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
 
@@ -40,43 +40,57 @@
     
         <!-- Custom styles for this template -->
         <link href="css/cover.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet">
         <script src="scripts/header.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
-    </head>
+
+      </head>
     <body onload="navCheck()" class="d-flex text-center text-white bg-dark">
         <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
             
             <%- include('common/header'); -%>
             
-            <main class="pt-5 px-3">
-                <h1>Genshin Impact Database</h1>
-                <p class="lead">This is a fan made database designed to help you get more out of playing MiHoYo's Genshin Impact!</p>
-                <p class="lead">Currently, there is just the Artifact Evaluation feature. If you register you can save your artifacts for future reference.</p>
-                <p class="lead">I plan to provide more tools in the future so check back regularly :)</p>
-                <p class="lead">
-                    <a href="artifact-evaluation" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Evaluate an Artifact</a>
-                </p>
+            <main class="pt-5 px-3 justify-content-center">
+                <h1 class="text-center">Join</h1>
+                <div class="row justify-content-md-center">
+                  <div class="col-4">
+                    <form method="POST" action="/join">
+                      <div class="form-group input-outline-white my-3">
+                        <span class="form-group-text w-25 text-white">Name:</span>
+                        <input type="text" class="form-control bg-dark text-white " id="name" name="name"/>
+                        </div>
+                        <div>
+                        <% if (errors['name']) { %>
+                        <p style="color: red"><%= errors['name'].message %></p>
+                        <% } %>
+                      </div>
 
-                <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-4 py-3">
-                    <div class="col">
-                      <div class="card border-light h-100 overflow-hidden text-white bg-dark rounded-5">
-                        <div class="d-flex flex-column h-100 p-5 text-white">
-                          <h1 class="mt-3 mb-3 display-6 lh-1 fw-bold"><%= totalUsers %></h1>
-                          <h2 class="mb-3 display-6 lh-1">Users Registered</h2>
-                        </div>
+                      <div class="form-group input-outline-white my-3">
+                        <span class="form-group-text w-25 text-white">Email:</span>
+                        <input type="email" class="form-control bg-dark text-white " id="email" name="email"/>
                       </div>
-                    </div>
-                    <div class="col">
-                        <div class="card border-light h-100 overflow-hidden text-white bg-dark rounded-5">
-                          <div class="d-flex flex-column h-100 p-5 text-white">
-                            <h1 class="mt-3 mb-3 display-6 lh-1 fw-bold"><%= totalArtifacts %></h1>
-                            <h2 class="mb-3 display-6 lh-1">Artifacts Saved</h2>
-                          </div>
-                        </div>
+                      <div>
+                        <% if (errors['email']) { %>
+                        <p style="color: red"><%= errors['email'].message %></p>
+                        <% } %>
                       </div>
+                      <div class="form-group input-outline-white my-3">
+                        <span class="form-group-text w-25 text-white">Password:</span>
+                        <input type="password" class="form-control bg-dark text-white " id="password" name="password"/>
+                      </div>
+                      <div>
+                        <% if (errors['password']) { %>
+                        <p style="color: red"><%= errors['password'].message %></p>
+                        <% } %>
+                      </div>
+        
+                      <button type="submit" class="btn btn-outline-light my-3">Submit</button>
+                    </form>
+
+                  </div>
                 </div>
+        
             </main>
             <%- include('common/footer'); -%>
-        </div>
     </body>
 </html>

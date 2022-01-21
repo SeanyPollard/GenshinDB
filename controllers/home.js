@@ -1,4 +1,4 @@
-const Users = require('../models/Users');
+const Users = require('../models/User');
 const Artifacts = require('../models/UserArtifacts')
 
 exports.list = async (req, res) => {
